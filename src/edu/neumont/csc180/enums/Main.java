@@ -1,3 +1,5 @@
+package edu.neumont.csc180.enums;
+
 public class Main {
 
     public static void doSomething() {

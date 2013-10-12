@@ -1,3 +1,5 @@
+package edu.neumont.csc180.enums;
+
 /**
  * Created with IntelliJ IDEA.
  * User: tefreestone
@@ -28,7 +30,7 @@ public abstract class Plant {
 //    @Override
 //    public String toString() {
 ////        setLeaves();
-//        return "Plant{" +
+//        return "edu.neumont.csc180.enums.Plant{" +
 //                "leaves='" + leaves + '\'' +
 //                ", roots='" + roots + '\'' +
 //                '}';

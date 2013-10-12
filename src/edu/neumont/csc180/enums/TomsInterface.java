@@ -1,3 +1,5 @@
+package edu.neumont.csc180.enums;
+
 /**
  * Created with IntelliJ IDEA.
  * User: tefreestone
