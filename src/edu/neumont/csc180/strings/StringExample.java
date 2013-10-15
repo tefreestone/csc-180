@@ -12,5 +12,10 @@ public class StringExample {
     public void exampleOfString() {
         String stuff = "Hello World";
         StringBuffer someOtherStuff = new StringBuffer("Hello World");
+
+        stuff = stuff + " more stuff";
+        someOtherStuff.append(" more stuff");
+
+
     }
 }

@@ -9,11 +9,26 @@ package edu.neumont.csc180.exceptions;
  */
 public class SomeClassWithProblems {
 
-    public void someTryMethod(String somePotentialProblem) {
+    public void someTryMethod(String somePotentialProblem) throws IllegalArgumentException {
+        somePotentialProblem = "stuff";
+        try {
+
+        } catch (IllegalArgumentException exeception) {
+            return;
+        }  catch (OutOfMemoryError e) {
+
+        }  finally {
+
+        }
 
     }
 
-    public void someThrowMethod(String someOtherProblem) {
+    public void someThrowMethod(final String someOtherProblem) {
+        if(someOtherProblem != null) {
+
+        }   else
+            throw new IllegalArgumentException("someotherproblem == null");
+
 
     }
 }
