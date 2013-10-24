@@ -1,0 +1,20 @@
+"[A-Z][a-z\s"]+[.]"
+
+
+Java      true
+
+\Breg.*    false
+
+n.w\s+h(a|i)s  true
+
+s?           true
+
+s*            true
+
+s+           yes
+
+s{4}        false
+
+s{1}        true
+
+s{0, 3}    true
