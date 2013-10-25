@@ -47,7 +47,6 @@ public class Files {
             try {
                 System.out.println(f.getCanonicalPath());
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
