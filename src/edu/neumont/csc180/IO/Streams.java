@@ -56,7 +56,7 @@ public class Streams {
 
     public static void main(String[] args) {
 
-        Contact[] contacts = new Contact[]{new Contact("Jake", 27), new Contact("Bob", 55)};
+        Contact[] contacts = new Contact[]{new Contact("Tom", 39), new Contact("Bob", 55)};
         try (DataOutputStream out = new DataOutputStream(new FileOutputStream("data.bin"))) {
             for (Contact c : contacts) {
                 c.write(out);
