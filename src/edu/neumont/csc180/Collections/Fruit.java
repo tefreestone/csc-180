@@ -62,8 +62,7 @@ public class Fruit implements Comparable<Fruit> {
         return this.quantity - compareQuantity;
     }
 
-    public static Comparator<Fruit> FruitNameComparator
-            = new Comparator<Fruit>() {
+    public static Comparator<Fruit> FruitNameComparator = new Comparator<Fruit>() {
 
         public int compare(Fruit fruit1, Fruit fruit2) {
 
