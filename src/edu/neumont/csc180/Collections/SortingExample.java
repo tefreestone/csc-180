@@ -15,6 +15,16 @@ public class SortingExample {
 
     private List<String> fruits;
 
+    public void pieceOJunk() {
+        String[] myStringArray = new String[3];
+        String[] myStringArray1 = {"a", "b", "c"};
+        String[] myStringArray2 = new String[]{"a", "b", "c"};
+
+        for (int i = 0; i >= myStringArray1.length - 1; i++) {
+            System.out.println(myStringArray1[i]);
+        }
+    }
+
 
     public void sortFruit() {
         fruits = new ArrayList<String>();
