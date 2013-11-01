@@ -54,8 +54,7 @@ public class Streams {
         }
     }
 
-    public static void main(String[] args) {
-
+    public void outputContact() {
         Contact[] contacts = new Contact[]{new Contact("Tom", 39), new Contact("Bob", 55)};
         try (DataOutputStream out = new DataOutputStream(new FileOutputStream("data.bin"))) {
             for (Contact c : contacts) {
@@ -75,6 +74,10 @@ public class Streams {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 
 

@@ -4,8 +4,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class Contact {
-    String name;
-    int id;
+    private String name;
+    private int id;
 
     public Contact(String name, int id) {
         this.name = name;
