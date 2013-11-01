@@ -1,6 +1,5 @@
 package edu.neumont.csc180.Serialization;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
@@ -10,7 +9,7 @@ import java.io.Serializable;
  * Time: 7:36 AM
  * To change this template use File | Settings | File Templates.
  */
-@XmlRootElement
+
 public class SerializationExample implements Serializable {
 
     private String someProperty;
