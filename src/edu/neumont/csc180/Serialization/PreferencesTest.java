@@ -38,7 +38,7 @@ public class PreferencesTest {
     }
 
     public static void main(String[] args) {
-        PreferenceTest test = new PreferenceTest();
-        test.setPreference();
+//        PreferenceTest test = new PreferenceTest();
+//        test.setPreference();
     }
 }
