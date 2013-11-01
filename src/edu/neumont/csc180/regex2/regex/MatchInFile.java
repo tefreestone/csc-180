@@ -13,7 +13,7 @@ public class MatchInFile {
         int count = 0;
         while (search.find()) {
             Fish fish = new Fish(++count, search.group(), search.start());
-            FishUrl fishUrl = new FishUrl(search);
+//            FishUrl fishUrl = new FishUrl(search);
             System.out.println(fish);
             // Print url instead
         }
