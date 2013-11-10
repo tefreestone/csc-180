@@ -12,6 +12,8 @@ import java.util.*;
 public class CollectionsExample {
     public void asList() {
         List<String> stringList = new ArrayList<>();
+        stringList = new LinkedList<>();
+
     }
 
     public void asSet() {
