@@ -17,7 +17,7 @@ public class TabbedPaneDemo extends JPanel {
         super(new GridLayout(1, 1));
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        ImageIcon icon = createImageIcon("images/middle.gif");
+        ImageIcon icon = createImageIcon("../images/middle.gif");
 
         JComponent panel1 = makeTextPanel("Panel #1");
         tabbedPane.addTab("Tab 1", icon, panel1,
