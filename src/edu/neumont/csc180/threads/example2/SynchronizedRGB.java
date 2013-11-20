@@ -1,4 +1,4 @@
-package edu.neumont.csc180.threads;
+package edu.neumont.csc180.threads.example2;
 
 /*
  * Copyright (c) 1995, 2008, Oracle and/or its affiliates. All rights reserved.
