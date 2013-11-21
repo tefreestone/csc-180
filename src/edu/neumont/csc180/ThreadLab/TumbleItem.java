@@ -35,7 +35,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedInputStream;
 
 /**
  * @author jag
@@ -82,7 +81,7 @@ public class TumbleItem extends JApplet
     protected void loadAppletParameters() {
         //Get the applet parameters.
         String at = getParameter("img");
-        dir = (at != null) ? at : "images/tumble";
+        dir = (at != null) ? at : "/projects/csc-180/csc-180/images/tumble";
         at = getParameter("pause");
         pause = (at != null) ? Integer.valueOf(at).intValue() : 1900;
         at = getParameter("offset");
@@ -244,29 +243,9 @@ public class TumbleItem extends JApplet
      */
     protected ImageIcon loadImage(int imageNum) {
         String path = dir + "/T" + imageNum + ".gif";
-        int MAX_IMAGE_SIZE = 2400;  //Change this to the size of
-        //your biggest image, in bytes.
-        int count = 0;
-        BufferedInputStream imgStream = new BufferedInputStream(
-                this.getClass().getResourceAsStream(path));
-        if (imgStream != null) {
-            byte buf[] = new byte[MAX_IMAGE_SIZE];
-            try {
-                count = imgStream.read(buf);
-                imgStream.close();
-            } catch (java.io.IOException ioe) {
-                System.err.println("Couldn't read stream from file: " + path);
-                return null;
-            }
-            if (count <= 0) {
-                System.err.println("Empty file: " + path);
-                return null;
-            }
-            return new ImageIcon(Toolkit.getDefaultToolkit().createImage(buf));
-        } else {
-            System.err.println("Couldn't find file: " + path);
-            return null;
-        }
+
+        return new ImageIcon(path);
+
     }
 
     public String getAppletInfo() {
