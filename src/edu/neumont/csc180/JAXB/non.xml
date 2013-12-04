@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<enrollment>
+    <cohorts number="1">
+        <students>
+            <email>jwalkenhorst@neumont.edu</email>
+            <name>Jake</name>
+            <password>12345</password>
+        </students>
+        <students>
+            <email>tclark@neumont.edu</email>
+            <name>Tim</name>
+            <password>orm</password>
+        </students>
+        <students>
+            <email>shalladay@neumont.edu</email>
+            <name>Steve</name>
+            <password>bunnies</password>
+        </students>
+    </cohorts>
+    <cohorts number="2">
+        <students>
+            <email>jneumont@neumont.edu</email>
+            <name>John</name>
+            <password>lol</password>
+        </students>
+        <students>
+            <email>tsmithy@neumont.edu</email>
+            <name>Timmy</name>
+            <password>wow</password>
+        </students>
+    </cohorts>
+</enrollment>
