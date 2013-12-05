@@ -1,9 +1,9 @@
 package edu.neumont.csc180.JAXB.Marshal;
 
-import generated.Cohort;
-import generated.Enrollment;
-import generated.ObjectFactory;
-import generated.Student;
+import edu.neumont.csc180.JAXB.generated.Cohort;
+import edu.neumont.csc180.JAXB.generated.Enrollment;
+import edu.neumont.csc180.JAXB.generated.ObjectFactory;
+import edu.neumont.csc180.JAXB.generated.Student;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -44,8 +44,8 @@ public class MarshalXML {
         s.setEmail("tsmithy@neumont.edu");
         s.setPassword("wow");
         two.getStudents().add(s);
-        try (OutputStream out = new FileOutputStream("test.xml")) {
-            JAXBContext context = JAXBContext.newInstance("generated");
+        try (OutputStream out = new FileOutputStream("/projects/csc-180/csc-180/src/edu/neumont/csc180/JAXB/test.xml")) {
+            JAXBContext context = JAXBContext.newInstance("edu.neumont.csc180.JAXB.generated");
             Marshaller marsh = context.createMarshaller();
             marsh.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true); //human-readable output
             marsh.marshal(enroll, out); //Ouput the XML

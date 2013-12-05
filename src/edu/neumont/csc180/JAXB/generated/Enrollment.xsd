@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="enrollment">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cohorts" type="cohort" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="cohort">
+        <xs:sequence>
+            <xs:element name="students" type="student" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="number" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="student">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="password" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
+
